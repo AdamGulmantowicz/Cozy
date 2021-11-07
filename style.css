@@ -1,0 +1,233 @@
+/* około 37 właściwości CSS */
+
+/* global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fefefe;
+  color: #111;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* components */
+
+.btn {
+  border: none;
+  background: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 3px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.btn.small {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+.btn.green {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,0.6) 0%, rgba(12,116,117,0.6) 90% );
+  color: #fff;
+}
+
+/* header section */
+
+.header {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,0.6) 0%, rgba(12,116,117,0.6) 90% ), url(./images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.header .heading {
+  color: #fff;
+  font-size: 60px;
+  padding-top: 200px;
+  margin-bottom: 32px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.nav {
+  margin: 0 auto;
+}
+
+.nav-list {
+  padding: 10px 40px;
+  background-color: #fdfdfd;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.nav-item {
+  width: 33.333%;
+  text-align: center;
+  float: left;
+}
+
+/* cards section */
+
+.cards {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.cards-heading {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: 400;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,0.6) 0%, rgba(12,116,117,0.6) 90% );
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card-wrapper {
+  background: #fefefe;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.card-content,
+.card-fig {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.card-content {
+  padding: 20px;
+  float: left;
+  clear: left;
+}
+
+.card-fig {
+  float: right;
+  clear: right;
+}
+
+.card-title {
+  margin-bottom: 16px;
+}
+
+.card-text {
+  margin-bottom: 16px;
+}
+
+/* more offers section */
+
+.contact {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,0.6) 0%, rgba(12,116,117,0.6) 90% ), url(./images/contact.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 400px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.contact-heading {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 20px;
+}
+
+/* footer */
+
+.footer {
+  background-color: rgba(12,116,117,1);
+}
+
+.footer, .footer a {
+  color: #fefefe;
+}
+
+.footer-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-heading {
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer-item {
+  margin-top: 12px;
+}
+
+.footer-item:first-child {
+  margin-top: 0;
+}
+
+.copyright {
+  background: #444;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
